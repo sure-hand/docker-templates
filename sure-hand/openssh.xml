@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>OpenSSH Server</Name>
+  <Description>Dockerized OpenSSH Server</Description>
+  <Registry>https://hub.docker.com/r/surehand/openssh/</Registry>
+  <Repository>surehand/openssh</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9022</HostPort>
+        <ContainerPort>22</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/disk1</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>r</Mode>
+    </Volume>
+  </Data>
+  <Version>05616fd2</Version>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <Banner>http://whatsmybeeragain.com/wp-content/uploads/2013/12/Whats-My-Beer-Logo-Banner-2-01-e1318366883801.png</Banner>
+  <Icon>http://fullersbarbeerfest.co.uk/files/6113/8705/6693/light-beer.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
