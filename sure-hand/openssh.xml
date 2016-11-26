@@ -24,9 +24,9 @@
       <Mode>r</Mode>
     </Volume>
   </Data>
-  <Version>05616fd2</Version>
-  <WebUI>http://[IP]:[PORT:80]/</WebUI>
-  <Banner>http://whatsmybeeragain.com/wp-content/uploads/2013/12/Whats-My-Beer-Logo-Banner-2-01-e1318366883801.png</Banner>
-  <Icon>http://www.pc-freak.net/images/ssh-how-to-login-with-password-provided-from-command-line-use-sshpass-to-run-same-command-to-forest-of-linux-servers.png</Icon>
+  <Version>3</Version>
+  <WebUI/>
+  <Banner/>
+  <Icon>https://github.com/sure-hand/docker-openssh/blob/master/ssh-icon.png</Icon>
   <ExtraParams></ExtraParams>
 </Container>
