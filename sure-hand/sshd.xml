@@ -32,6 +32,6 @@
   <Version>1</Version>
   <WebUI/>
   <Banner/>
-  <Icon>https://raw.githubusercontent.com/sure-hand/docker-openssh/master/ssh-icon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/sure-hand/docker-sshd/master/ssh-icon.png</Icon>
   <ExtraParams></ExtraParams>
 </Container>
