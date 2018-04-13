@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>FileRun</Name>
+  <Description>Self-hosted Google Drive/Photos/Music alternative</Description>
+  <Registry>https://hub.docker.com/r/afian/filerun/</Registry>
+  <Repository>afian/filerun</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8085</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/config/db</HostDir>
+      <ContainerDir>/var/lib/mysql</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/config/html</HostDir>
+      <ContainerDir>/var/www/html</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/disk1</HostDir>
+      <ContainerDir>/filerun/user-files</ContainerDir>
+      <Mode>r</Mode>
+    </Volume>
+  </Data>
+  <Version>1</Version>
+  <WebUI/>
+  <Banner/>
+  <Icon>https://pbs.twimg.com/profile_images/744957591793602560/vn33i2mp.jpg</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
