@@ -17,18 +17,7 @@
       </Port>
     </Publish>
   </Networking>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/cache/appdata/config/db</HostDir>
-      <ContainerDir>/var/lib/mysql</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/cache/appdata/config/html</HostDir>
-      <ContainerDir>/var/www/html</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
+  <Data/>
   <Version>1</Version>
   <WebUI/>
   <Banner/>
