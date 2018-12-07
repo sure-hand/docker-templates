@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>HomeAssistant</Name>
+  <Description>Home Assistant is a home automation platform running on Python 3. It is able to track and control all devices at home and offer a platform for automating control.</Description>
+  <Registry>https://hub.docker.com/r/homeassistant/home-assistant/</Registry>
+  <Repository>homeassistant/home-assistant</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8123 </HostPort>
+        <ContainerPort>8123</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/config/db</HostDir>
+      <ContainerDir>/var/lib/mysql</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/config/html</HostDir>
+      <ContainerDir>/var/www/html</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>1</Version>
+  <WebUI/>
+  <Banner/>
+  <Icon>https://d33wubrfki0l68.cloudfront.net/075995fe17a5351e2699b2dd878652ec4f1d8654/8bfdd/demo/favicon-192x192.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
