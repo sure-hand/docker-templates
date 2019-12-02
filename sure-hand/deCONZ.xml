@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>deCONZ</Name>
+  <Description>deCONZ software from Dresden Elektronik, which controls a ZigBee network Conbee USB</Description>
+  <Registry>https://hub.docker.com/r/marthoc/deconz</Registry>
+  <Repository>marthoc/deconz</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>host</Mode>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>DECONZ_WEB_PORT</Name>
+      <Value>8080</Value>
+    </Variable>
+    <Variable>
+      <Name>DECONZ_WS_PORT</Name>
+      <Value>8443</Value>
+    </Variable>
+    <Variable>
+      <Name>DECONZ_DEVICE</Name>
+      <Value>/dev/ttyUSB0</Value>
+    </Variable>
+    <Variable>
+      <Name>DECONZ_VNC_MODE</Name>
+      <Value>1</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/opt/deconz</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>1</Version>
+  <WebUI/>
+  <Banner/>
+  <Icon/>
+  <ExtraParams></ExtraParams>
+</Container>
