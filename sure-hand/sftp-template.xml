@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>sftp</Name>
+  <Name>surehand-sftp</Name>
   <Repository>surehand/docker-sftp</Repository>
   <Registry/>
   <Network>bridge</Network>
